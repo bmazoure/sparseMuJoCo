@@ -15,7 +15,8 @@ Environment used in the paper PLACEHOLDER.
 ### How to use
 ```python
 import gym
-gym.makeenv("SparseHumanoid-v2")
+
+env=gym.make("SparseHumanoid-v2")
 ```
 
 
