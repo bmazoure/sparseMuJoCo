@@ -12,4 +12,11 @@ Environment used in the paper PLACEHOLDER.
 * Reward of +1 is granted if the agent's center of mass is above a threshold of 0.6.
 
 
+### How to use
+''' python
+import gym
+gym.makeenv("SparseHumanoid-v2")
+'''
+
+
 To cite the paper:
