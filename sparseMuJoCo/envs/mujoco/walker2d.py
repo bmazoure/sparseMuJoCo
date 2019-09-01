@@ -13,9 +13,14 @@ class Walker2dEnv(mujoco_env.MujocoEnv, utils.EzPickle):
         self.do_simulation(a, self.frame_skip)
         posafter, height, ang = self.sim.data.qpos[0:3]
         alive_bonus = 1.0
-        reward = ((posafter - posbefore) / self.dt)
-        reward += alive_bonus
-        reward -= 1e-3 * np.square(a).sum()
+        # reward = ((posafter - posbefore) / self.dt)
+        # reward += alive_bonus
+        # reward -= 1e-3 * np.square(a).sum()
+        """
+        Sparse reward
+        """
+        reward = int( abs(posafter) >= 15. )
+
         done = not (height > 0.8 and height < 2.0 and
                     ang > -1.0 and ang < 1.0)
         ob = self._get_obs()

@@ -93,7 +93,12 @@ class AntEnv(mujoco_env.MujocoEnv, utils.EzPickle):
         rewards = forward_reward + healthy_reward
         costs = ctrl_cost + contact_cost
 
-        reward = rewards - costs
+        #reward = rewards - costs
+        """
+        Sparse reward
+        """
+        reward = int( (xy_position_after - xy_position_before) > 15. )
+        
         done = self.done
         observation = self._get_obs()
         info = {

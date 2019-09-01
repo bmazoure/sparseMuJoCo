@@ -125,7 +125,12 @@ class HumanoidEnv(mujoco_env.MujocoEnv, utils.EzPickle):
         costs = ctrl_cost + contact_cost
 
         observation = self._get_obs()
-        reward = rewards - costs
+        # reward = rewards - costs
+        """
+        Sparse rewards
+        """
+        reward = int( abs(xy_position_after[0]) >= 0.6 )
+
         done = self.done
         info = {
             'reward_linvel': forward_reward,

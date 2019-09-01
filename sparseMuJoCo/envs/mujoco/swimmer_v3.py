@@ -43,7 +43,12 @@ class SwimmerEnv(mujoco_env.MujocoEnv, utils.EzPickle):
         ctrl_cost = self.control_cost(action)
 
         observation = self._get_obs()
-        reward = forward_reward - ctrl_cost
+        # reward = forward_reward - ctrl_cost
+        """
+        Sparse rewards
+        """
+        reward = int( ( abs(xy_position_after[0]) + abs(xy_position_after[1]) ) >= 15. )
+        
         done = False
         info = {
             'reward_fwd': forward_reward,

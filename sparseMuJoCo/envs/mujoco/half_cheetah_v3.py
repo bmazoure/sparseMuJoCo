@@ -45,7 +45,12 @@ class HalfCheetahEnv(mujoco_env.MujocoEnv, utils.EzPickle):
         forward_reward = self._forward_reward_weight * x_velocity
 
         observation = self._get_obs()
-        reward = forward_reward - ctrl_cost
+        # reward = forward_reward - ctrl_cost
+        """
+        Sparse reward
+        """
+        reward = int( abs(x_position_after) >= 15. )
+
         done = False
         info = {
             'x_position': x_position_after,

@@ -107,7 +107,12 @@ class HopperEnv(mujoco_env.MujocoEnv, utils.EzPickle):
         costs = ctrl_cost
 
         observation = self._get_obs()
-        reward = rewards - costs
+        # reward = rewards - costs
+        """
+        Sparse reward
+        """
+        reward = int( abs(x_position_after) >= 15. )
+        
         done = self.done
         info = {
             'x_position': x_position_after,
