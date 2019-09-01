@@ -1,5 +1,7 @@
 
-## Implementation of __**SparseHumanoid-v2**__ environment used in the paper PLACEHOLDER.
+## Implementation of __**SparseHumanoid-v2**__ 
+
+Environment used in the paper PLACEHOLDER.
 
 ### Information about the environment:
 
