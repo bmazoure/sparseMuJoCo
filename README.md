@@ -9,7 +9,7 @@ Environment used in the paper PLACEHOLDER.
 
 * The episode terminates if the agent falls down 
 
-* Reward of +1 is granted if the agent's center of mass (COM) is above a threshold of 0.6.
+* Reward of +1 is granted if the agent's center of mass (COM) is above a threshold distance (wrt to its starting point) of 0.6.
 
 
 ### How to use
