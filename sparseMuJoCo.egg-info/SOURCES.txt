@@ -1,7 +1,0 @@
-README.md
-setup.py
-sparseMuJoCo.egg-info/PKG-INFO
-sparseMuJoCo.egg-info/SOURCES.txt
-sparseMuJoCo.egg-info/dependency_links.txt
-sparseMuJoCo.egg-info/requires.txt
-sparseMuJoCo.egg-info/top_level.txt
