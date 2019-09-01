@@ -7,9 +7,9 @@ Environment used in the paper PLACEHOLDER.
 
 * Episode max steps: 1000
 
-* The episode terminates if the agent fall down 
+* The episode terminates if the agent falls down 
 
-* Reward of +1 is granted if the agent's center of mass is above a threshold of 0.6.
+* Reward of +1 is granted if the agent's center of mass (COM) is above a threshold of 0.6.
 
 
 ### How to use
