@@ -13,10 +13,10 @@ Environment used in the paper PLACEHOLDER.
 
 
 ### How to use
-''' python
+```python
 import gym
 gym.makeenv("SparseHumanoid-v2")
-'''
+```
 
 
 To cite the paper:
