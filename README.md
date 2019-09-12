@@ -3,7 +3,7 @@
 
 Environment used in the papers 
 
-* [Leveraging exploration in off-policy algorithms via normalizing flows](https://arxiv.org/pdf/1905.06893.pdf)
+* [Leveraging exploration in off-policy algorithms via normalizing flows (CoRL 2019)](https://arxiv.org/pdf/1905.06893.pdf)
 ```
  @article{mazoure2019leveraging,
   title={Leveraging exploration in off-policy algorithms via normalizing flows},
