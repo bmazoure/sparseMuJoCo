@@ -4,6 +4,17 @@
 Environment used in the papers 
 
 * [Leveraging exploration in off-policy algorithms via normalizing flows](https://arxiv.org/pdf/1905.06893.pdf)
+```
+ @article{mazoure2019leveraging,
+  title={Leveraging exploration in off-policy algorithms via normalizing flows},
+  author={Mazoure, Bogdan and Doan, Thang and Durand, Audrey and Hjelm, R Devon and Pineau, Joelle},
+  journal={Proceedings of the 3rd Conference on Robot Learning (CoRL 2019)},
+  year={2019}
+} 
+
+```
+
+
 ### Information about the environment:
 
 * Episode max steps: 1000
@@ -20,14 +31,3 @@ import gym
 env=gym.make("SparseHumanoid-v2")
 ```
 
-
-To cite the papers:
-```
- @article{mazoure2019leveraging,
-  title={Leveraging exploration in off-policy algorithms via normalizing flows},
-  author={Mazoure, Bogdan and Doan, Thang and Durand, Audrey and Hjelm, R Devon and Pineau, Joelle},
-  journal={Proceedings of the 3rd Conference on Robot Learning (CoRL 2019)},
-  year={2019}
-} 
-
-```
