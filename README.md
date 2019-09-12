@@ -1,8 +1,9 @@
 
 ## Implementation of __**SparseHumanoid-v2**__ 
 
-Environment used in the paper PLACEHOLDER.
+Environment used in the paper 
 
+* [Leveraging exploration in off-policy algorithms via normalizing flows](https://arxiv.org/pdf/1905.06893.pdf)
 ### Information about the environment:
 
 * Episode max steps: 1000
