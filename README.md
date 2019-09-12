@@ -1,7 +1,7 @@
 
 ## Implementation of __**SparseHumanoid-v2**__ 
 
-Environment used in the paper 
+Environment used in the papers 
 
 * [Leveraging exploration in off-policy algorithms via normalizing flows](https://arxiv.org/pdf/1905.06893.pdf)
 ### Information about the environment:
@@ -22,3 +22,12 @@ env=gym.make("SparseHumanoid-v2")
 
 
 To cite the paper:
+```
+ @article{mazoure2019leveraging,
+  title={Leveraging exploration in off-policy algorithms via normalizing flows},
+  author={Mazoure, Bogdan and Doan, Thang and Durand, Audrey and Hjelm, R Devon and Pineau, Joelle},
+  journal={Proceedings of the 3rd Conference on Robot Learning (CoRL 2019)},
+  year={2019}
+} 
+
+```
