@@ -21,7 +21,7 @@ env=gym.make("SparseHumanoid-v2")
 ```
 
 
-To cite the paper:
+To cite the papers:
 ```
  @article{mazoure2019leveraging,
   title={Leveraging exploration in off-policy algorithms via normalizing flows},
